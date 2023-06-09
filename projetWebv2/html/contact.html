@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulaire de Contact Professionnel</title>
+    <link rel="stylesheet" type="text/css" href="../css/contact.css">
+    <link rel="stylesheet" href="../css/footer.css"/>
+    <link rel="stylesheet" href="../css/header.css"/>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="accueil.html"><img src="../ELEVATE(4).png" id="LogoNav" alt="logo du site"> </a>
+            <ul id="menuNav">
+                <li class="blackMenu">
+                    <a href="nostableaux.html" class="nostableaux">Nos tableaux</a>
+                    <a href="rechercher.html" class="rechercher">Rechercher</a>
+                </li>
+                <li id="greenMenu">
+                    <a href="contact.html" class="contact">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <h1>Contactez-nous</h1>
+        <form id="contact-form">
+            <input type="text" id="name" name="name" placeholder="Votre nom" required>
+            <input type="email" id="email" name="email" placeholder="Votre email" required>
+            <textarea id="message" name="message" placeholder="Votre message" required></textarea>
+            <input type="submit" value="Envoyer">
+        </form>
+    </div>
+    <script>
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Votre message a été envoyé avec succès!');
+        });
+    </script>
+    <footer>
+        <div class="backFooter">
+            <div class="footerInformations">
+                <h3>Informations</h3>
+                <a href="#">Qu'est-ce qu'elevate ?</a>
+            </div>
+            
+            <div class="aPropos">
+                <h3>Nous contacter</h3>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+            </div>
+
+            <div class="infoLegale">
+                <p>elevate.fr - Tous droit réservé - 2023 <br> Site de Gallerie d'Art.</p>
+            </div>
+
+        </div>
+    </footer>
+</body>
+</html>

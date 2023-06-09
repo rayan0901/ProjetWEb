@@ -1,0 +1,106 @@
+                                                                               /*** Footer ***/
+
+footer .logoSite{
+    margin-top: 20px;
+    height: 96px;
+    width: 96px;
+}
+ 
+ .backFooter{
+     display: flex;
+     max-width: 2000px;
+ }
+ 
+ footer {
+     display: flex;
+     justify-content: space-evenly;
+     background-color: #222;
+     color: #fff;
+     padding: 30px 0;
+     font-family: Arial, sans-serif;
+    width: 100%;
+   }
+   
+   footer h3 {
+     font-weight: 600;
+     font-size: 1.2em;
+     margin-bottom: 15px;
+   }
+   
+   footer a {
+     color: #fff;
+     text-decoration: none;
+     margin: 5px 0;
+   }
+   
+   footer a:hover {
+     color: #ddd;
+   }
+   
+   footer p{
+     text-align: center;
+     margin-top: 20px;
+     font-size: 0.85em;
+   }
+   
+   .aPropos{
+     display: flex;
+     flex-direction: column;
+     margin-left: 50px;
+     margin-right: 70px;
+   }
+ 
+   .infoLegale{
+     margin-top: auto;
+     margin-bottom: auto;
+     margin-left: 10px;
+     margin-right: 10px;
+   }
+
+   .backFooter{
+    margin-left: 10px;
+    margin-right: 10px;
+   }
+
+   .footer1{
+    display: flex;
+   }
+ 
+   @media screen and (max-width: 1000px) {
+     footer{
+         text-align: center;
+     }
+     footer .logoSite{
+         display: none;
+     }
+   }
+
+   @media screen and (max-width: 700px) {
+    footer .logoSite{
+        display: none;
+    }
+
+    .backFooter{
+      display: block;
+    }
+
+    .aPropos{
+      margin-right: 0;
+    }
+  }
+
+  @media screen and (max-width: 420px) {
+    .footer1 h3{
+      font-size: 15px;
+    }
+
+    .footer1 a{
+      font-size: 10px;
+    }
+
+    .infoLegale p{
+      font-size: 10px;
+    }
+  }
+
+

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&amp;display=swap">
+
+    <link rel="stylesheet" href="../css/accueil.css"/>
+    <link rel="stylesheet" href="../css/footer.css"/>
+    <link rel="stylesheet" href="../css/header.css"/>
+    <link rel="stylesheet" href="../css/cube.css"/>
+    <title>Galerie</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="accueil.html"><img src="../ELEVATE(4).png" id="LogoNav" alt="logo du site"> </a>
+            <ul id="menuNav">
+                <li class="blackMenu">
+                    <a href="nostableaux.html" class="nostableaux">Nos tableaux</a>
+                    <a href="rechercher.html" class="rechercher">Rechercher</a>
+                </li>
+                <li id="greenMenu">
+                    <a href="contact.html" class="contact">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="secondHeader">
+        <h1>Elevate Gallery : Une élévation artistique sans limite</h1>
+        <div class="slider">
+            <div class="container">
+                <div class="slide x">
+                </div>
+                <div class="slide y">
+                </div>
+                <div class="slide z">
+                </div>
+            </div>
+            <div class="shadow">
+            </div>
+        </div>
+
+    </div>
+
+    <div class="principal">
+        <div class="infoSite">
+            <h1 id="infoSiteTitre"> Qu'est-ce que Elevate ?</h1>
+            <p id="infoSiteDescr">
+                Nous sommes des visionnaires 
+                <span class="underlined">artistiques</span> et 
+                <span class="underlined">conceptuels</span>,
+                œuvrant pour le paysage 
+                <span class="underlined">culturel</span>.
+                Nous assistons les galeries d'art à naviguer dans de nouvelles sphères d'expression, 
+                <span class="underlined">à s'engager</span> avec les amateurs d'art et 
+                <span class="underlined">à concevoir</span>
+                des expositions 
+                <span class="underlined">impressionnantes</span>.
+            </p>
+        </div>
+    </div>
+    <div class="Presentation">
+        <h1 id="TitreTab"> Nos Tableaux du moment</h1>
+        <div id="AffichageTableau">
+            <div class="tableauArt">
+                <img class="tableauPhoto" src="../img/Tableaux/Joconde.jpg" alt="tableau">
+                <h2 class="titretableau">La joconde</h2>
+                <h2 class="Peintre">Leonard de Vinci</h2>
+                <h2 class="dateTableau">1506</h2>
+            </div>
+
+            <div class="tableauArt">
+                <img class="tableauPhoto" src="../img/Tableaux/americanGothicGrantWood.jpg" alt="tableau">
+                <h2 class="titretableau">American Gothic</h2>
+                <h2 class="Peintre">Grant Wood</h2>
+                <h2 class="dateTableau">1930</h2>
+            </div>
+
+            <div class="tableauArt">
+                <img class="tableauPhoto" src="../img/Tableaux/jeuneFillePerleVermeer.jpg" alt="tableau">
+                <h2 class="titretableau">Jeune Fille à la perle</h2>
+                <h2 class="Peintre">Johannes Vermeer</h2>
+                <h2 class="dateTableau">1665</h2>
+            </div>
+
+            <div class="tableauArt">
+                <img class="tableauPhoto" src="../img/Tableaux/lesdesespere.jpg" alt="tableau">
+                <h2 class="titretableau">Le Désespéré</h2>
+                <h2 class="Peintre">Gustave Courbet</h2>
+                <h2 class="dateTableau">1843</h2>
+            </div>
+
+            <div class="tableauArt">
+                <img class="tableauPhoto" src="../img/Tableaux/LesEpouxArnolfiniJanVanEyck.jpg" alt="tableau">
+                <h2 class="titretableau">Les Époux Arnolfini</h2>
+                <h2 class="Peintre">Jan van Eyck</h2>
+                <h2 class="dateTableau">1434</h2>
+            </div>
+
+            <div class="tableauArt">
+                <img class="tableauPhoto" src="../img/Tableaux/StarryNight.jpg" alt="tableau">
+                <h2 class="titretableau">La Nuit étoilée</h2>
+                <h2 class="Peintre">Vincent van Gogh</h2>
+                <h2 class="dateTableau">1889</h2>
+            </div>
+
+            <div class="tableauArt">
+                <img class="tableauPhoto" src="../img/Tableaux/tableauCelebreAdeleDeGustavKlimt.jpg" alt="tableau">
+                <h2 class="titretableau">Portrait d'Adèle Bloch-Bauer I</h2>
+                <h2 class="Peintre">Gustav Klimt</h2>
+                <h2 class="dateTableau">1907</h2>
+            </div>
+
+            <div class="tableauArt">
+                <img class="tableauPhoto" src="../img/Tableaux/thmDameAvecLhermine.jpg" alt="tableau">
+                <h2 class="titretableau">Dame à l'hermine</h2>
+                <h2 class="Peintre">Leonard de Vinci</h2>
+                <h2 class="dateTableau">1490</h2>
+            </div>
+        </div>
+    </div>
+    <div id="popup" style="display: none; position: fixed; width: 100%; height: 100%; top: 0; left: 0; background-color: rgba(0, 0, 0, 0.8); color: white; text-align: center; padding-top: 0%;">
+        <h2 id="popupTitre"></h2>
+        <img id="popupImage" style="max-width: 90%; max-height: 80%;">
+        <h2 id="popupPeintre"></h2>
+        <h2 id="popupDate"></h2>
+        <p id="popupDescription"></p>
+    </div>
+    <script src="../js/tableaux.js"></script>
+    
+    <footer>
+        <div class="backFooter">
+            <div class="footer1">
+                <div class="footerInformations">
+                    <h3>Informations</h3>
+                    <a href="#">Qu'est-ce que Elevate ?</a>
+                </div>
+                
+                <div class="aPropos">
+                    <h3>Nous contacter</h3>
+                    <a href="#">A propos</a>
+                    <a href="#"></a>
+                    <a href="#"></a>
+                </div>
+            </div>
+
+            <div class="infoLegale">
+                <p>elevate.fr - Tous droit réservé - 2023 <br> Site de Gallerie d'Art.</p>
+            </div>
+
+        </div>
+    </footer>
+</body>
+
+</html>

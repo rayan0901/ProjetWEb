@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/footer.css"/>
+    <link rel="stylesheet" href="../css/header.css"/>
+    <link rel="stylesheet" href="../css/rechercher.css"/>
+    <title>Rechercher</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="accueil.html"><img src="../ELEVATE(4).png" id="LogoNav" alt="logo du site"> </a>
+            <ul id="menuNav">
+                <li class="blackMenu">
+                    <a href="nostableaux.html" class="nostableaux">Nos tableaux</a>
+                    <a href="rechercher.html" class="rechercher">Rechercher</a>
+                </li>
+                <li id="greenMenu">
+                    <a href="contact.html" class="contact">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="container">
+        <div class="searchAndFilters">
+            <input type="text" id="searchBar" placeholder="Rechercher un tableau...">
+            <select id="filterBy">
+                <option value="">Filtrer par...</option>
+                <option value="Peintre">Peintre</option>
+                <option value="Date">Date</option>
+                <option value="Mouvement">Mouvement</option>
+            </select>
+            <select id="sortBy">
+                <option value="">Trier par...</option>
+                <option value="Titre">Titre</option>
+                <option value="Peintre">Peintre</option>
+                <option value="Date">Date</option>
+            </select>
+            <button id="addTableau">Vous ne trouvez pas un tableau ? Ajouter le</button>
+        </div>        
+        <h1 id="TitreTab"> Chercher un tableaux :</h1>
+        <table>
+            <tr>
+                <th>Image</th>
+                <th>Titre</th>
+                <th>Peintre</th>
+                <th>Date</th>
+                <th>Mouvement</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td><img src="../img/Tableaux/Joconde.jpg" alt="La Joconde"></td>
+                <td>La Joconde</td>
+                <td>Léonard de Vinci</td>
+                <td>1503-1506</td>
+                <td>Renaissance</td>
+                <td>Portrait de femme, probablement Lisa Gherardini, épouse de Francesco del Giocondo.</td>
+            </tr>
+            <tr>
+                <td><img src="../img/Tableaux/StarryNight.jpg" alt="La nuit étoilée"></td>
+                <td>La Nuit étoilée</td>
+                <td>Vincent Van Gogh</td>
+                <td>1889</td>
+                <td>Post-Impressionnisme</td>
+                <td>Représentation d'une nuit étoilée vue de la fenêtre de l'asile où Van Gogh était interné.</td>
+            </tr>
+            <tr>
+                <td><img src="../img/Tableaux/Guernica.jpg" alt="Guernica"></td>
+                <td>Guernica</td>
+                <td>Pablo Picasso</td>
+                <td>1937</td>
+                <td>Cubisme</td>
+                <td>Œuvre engagée qui dénonce les horreurs de la guerre civile espagnole.</td>
+            </tr>
+            <tr>
+                <td><img src="../img/Tableaux/TheScream.jpg" alt="Le Cri"></td>
+                <td>Le Cri</td>
+                <td>Edvard Munch</td>
+                <td>1893</td>
+                <td>Expressionnisme</td>
+                <td>Représentation de l'angoisse humaine.</td>
+            </tr>
+            <tr>
+                <td><img src="../img/Tableaux/americanGothicGrantWood.jpg" alt="American Gothic"></td>
+                <td>American Gothic</td>
+                <td>Grant Wood</td>
+                <td>1930</td>
+                <td>Réalisme régional</td>
+                <td>Une peinture iconique représentant une fermière tenant une fourche avec un homme à ses côtés.</td>
+            </tr>
+            <tr>
+                <td><img src="../img/Tableaux/jeuneFillePerleVermeer.jpg" alt="Jeune Fille à la perle"></td>
+                <td>Jeune Fille à la perle</td>
+                <td>Johannes Vermeer</td>
+                <td>1665</td>
+                <td>Baroque</td>
+                <td>Surnommée la "Mona Lisa du Nord", cette peinture est une représentation mystérieuse d'une jeune femme.</td>
+            </tr>
+        </table>
+        <div id="noResult" style="display: none;">Aucun résultat correspondant</div>
+    </div>
+
+    <footer>
+        <div class="backFooter">
+            <div class="footer1">
+                <div class="footerInformations">
+                    <h3>Informations</h3>
+                    <a href="#">Qu'est-ce que Elevate ?</a>
+                </div>
+                
+                <div class="aPropos">
+                    <h3>Nous contacter</h3>
+                    <a href="#">A propos</a>
+                    <a href="#"></a>
+                    <a href="#"></a>
+                </div>
+            </div>
+
+            <div class="infoLegale">
+                <p>elevate.fr - Tous droit réservé - 2023 <br> Site de Gallerie d'Art.</p>
+            </div>
+
+        </div>
+        <div id="popup" class="popup">
+            <div class="popup-content">
+              <span id="close">&times;</span>
+              <form id="addForm" autocomplete="off">
+                <label for="title">Titre :</label><br>
+                <input type="text" id="title" name="title"><br>
+                <label for="painter">Peintre:</label><br>
+                <input type="text" id="painter" name="painter"><br>
+                <label for="date">Date:</label><br>
+                <input type="text" id="date" name="date"><br>
+                <label for="movement">Mouvement:</label><br>
+                <input type="text" id="movement" name="movement"><br>
+                <label for="description">Description:</label><br>
+                <input type="text" id="description" name="description"><br>
+                <label for="image">Image:</label><br>
+                <input type="file" id="image" name="image" accept="image/*"><br>
+                <input type="submit" value="Ajouter">
+            </form>            
+            </div>
+          </div>
+          <script src="../js/rechercher.js"></script>  
+    </footer>
+
+</body>
+
+</html>
